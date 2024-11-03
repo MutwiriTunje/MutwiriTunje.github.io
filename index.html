@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="cdjns">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
 <body>
@@ -34,12 +34,14 @@
 
         <i class="fa-solid fa-bars" id="menu-icon"> </i>
 
-        <button class="visit-btn">Visit Github</button>
+        <a href="https://github.com/MutwiriTunje" target="_blank" aria-label="GitHub">
+            <button class="visit-btn">Visit Github</button>
+        </a>
     </header>
 
     <section id="about" class="about">
         <div class="about-container">
-            <img src="" alt="">
+            <img src="profile.JPG" alt="">
 
             <div class="info-box">
                 <div class="text">
@@ -49,19 +51,149 @@
                 </div>
 
                 <div class="btn-group">
-                    <div class="btn">Download CV</div>
-                    <div class="btn">Read CV</div>
+                    <a href="Tunje Mutwiri's CV.pdf" download="My_CV.pdf" class="btn">Download CV</a>
+                    <a href="Tunje Mutwiri's CV.pdf" target="_blank" class="btn">Read CV</a>
                     <div class="btn">Contact</div>
                 </div>
 
                 <div class="socials">
-                    <i class="fa-brands fa-github"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="coursera"></i>
+                    <a href="https://github.com/MutwiriTunje" target="_blank" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/tunje/" target="_blank" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.coursera.org/user/3b75d70e950eca8d5ef923d764745ac1" target="_blank"
+                        aria-label="Coursera">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
+
+    <section id="experience" class="experience">
+        <h2 class="section-title">Experience</h2>
+
+        <div class="experience-info">
+
+            <div class="grid">
+                <div class="grid-card">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Python Development</span>
+                    <h3>3+ Years</h3>
+                    <p>Crafted dynamic applications and automated solutions that drive efficiency and innovation. With a
+                        focus on clean, powerful code, I create scalable backend systems that are both reliable and easy
+                        to maintain.</p>
+                </div>
+
+                <div class="grid-card">
+                    <i class="fa-solid fa-file-code"></i>
+                    <span>Web Development & API Integration</span>
+                    <h3>2+ Years</h3>
+                    <p>Designed and launched user-centric web applications using Django and Flask. My expertise includes
+                        developing REST APIs that connect systems seamlessly, making complex workflows intuitive for
+                        users while ensuring top-tier functionality.</p>
+                </div>
+
+                <div class="grid-card">
+                    <i class="fa-solid fa-laptop"></i>
+                    <span>Machine Learning & Data Insights</span>
+                    <h3>1 Year</h3>
+                    <p>Passionate about transforming data into actionable insights. I’ve built predictive models that
+                        uncover trends and improve decision-making, with hands-on experience in data wrangling, feature
+                        engineering, and model optimization.</p>
+                </div>
+
+                <div class="grid-card">
+                    <i class="fa-solid fa-list"></i>
+                    <span>Technical Mastery & Tools</span>
+                    <h3>4+ Years</h3>
+                    <p>Well-versed in navigating the nuances of Linux, Windows, and macOS. My toolkit includes Git, SQL
+                        databases, and cloud services, and I’m dedicated to collaborative, agile development that
+                        delivers results efficiently and consistently.</p>
+                </div>
+            </div>
+
+            <img src="profile.JPG" alt="">
+        </div>
+
+    </section>
+
+    <section id="projects" class="projects">
+
+        <h2 class="section-title">Recent Projects</h2>
+
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <img src="" alt="">
+                <h3>Project 1</h3>
+                <p>lorem ipsum dolor sit amet consectetur adipiscing elit. Molestiae, voluptatem</p>
+                <div class="btn-group">
+                    <div class="btn">Visit Site</div>
+                    <div class="btn">GitHub Repo</div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="" alt="">
+                <h3>Project 2</h3>
+                <p>lorem ipsum dolor sit amet consectetur adipiscing elit. Molestiae, voluptatem</p>
+                <div class="btn-group">
+                    <div class="btn">Visit Site</div>
+                    <div class="btn">GitHub Repo</div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="" alt="">
+                <h3>Project 3</h3>
+                <p>lorem ipsum dolor sit amet consectetur adipiscing elit. Molestiae, voluptatem</p>
+                <div class="btn-group">
+                    <div class="btn">Visit Site</div>
+                    <div class="btn">GitHub Repo</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="input-box">
+
+            <h2 class="section-title">Contact Me</h2>
+
+            <div class="input">
+                <input type="text" placeholder="example@email.com">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+
+            <div class="btn">Submit</div>
+        </div>
+    </section>
+
+    <footer>
+
+        <ul>
+            <li>
+                <a href="#about">About</a>
+            </li>
+
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+
+        <p class="copyright">© All Rights Reserved | Tunje Mutwiri</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
