@@ -7,12 +7,22 @@
     <title>Portfolio Website</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/remixicon/fonts/remixicon.css">
 </head>
 
 <body>
-    <div class="theme-toggle-container">
-        <button id="them-toggle">Toggle Dark Mode</button>
+
+    <div>
+        <div id="theme-toggle" style="cursor: pointer;">
+            <!-- <i class="fas fa-sun" id="sun-icon" style="display: none;"></i> -->
+            <!-- <i class="fas fa-moon" id="moon-icon"></i> -->
+            <i class="ri-sun-fill" id="sun-icon" style="display: none;"></i> <!-- Sun icon -->
+            <i class="ri-moon-fill" id="moon-icon"></i> <!-- Moon icon -->
+        </div>
+        <script src="assets/js/toggle.js"></script>
     </div>
+
+
 
     <header class="header">
         <a href="#" class="logo"><span>Tunje Mutwiri</span></a>
@@ -33,6 +43,8 @@
             <li>
                 <a href="#contact">Contact</a>
             </li>
+
+
         </ul>
 
         <i class="fa-solid fa-bars" id="menu-icon"> </i>
