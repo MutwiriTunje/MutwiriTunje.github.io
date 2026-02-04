@@ -56,7 +56,7 @@
 
     <section id="about" class="about">
         <div class="about-container">
-            <img src="assets/images/profile.jpg" alt="">
+            <img src="assets/images/profile.jpeg" alt="">
 
             <div class="info-box">
                 <div class="text">
@@ -130,7 +130,7 @@
                 </div>
             </div>
 
-            <img src="assets/images/profile.jpg" alt="">
+            <img src="assets/images/profile.jpeg" alt="">
         </div>
 
     </section>
@@ -173,19 +173,41 @@
         </div>
     </section>
 
-    <section class="contact" id="contact">
-        <div class="input-box">
+    <section id="contact" class="contact">
+        <form method="POST" action="https://formspree.io/f/mojlzgbv">
+            <input type="hidden" name="_redirect" value="index.html">
 
-            <h2 class="section-title">Contact Me</h2>
+            <h1 class="form-title">Let's Connect</h1>
 
-            <div class="input">
+            <!--<section class="contact" id="contact">
+          <div class="input-box">
+
+              <h2 class="section-title">Contact Me</h2>
+
+              <div class="input">
                 <input type="text" placeholder="example@email.com">
                 <i class="fa-solid fa-envelope"></i>
-            </div>
+              </div>
 
-            <div class="btn">Submit</div>
-        </div>
+              <div class="btn">Submit</div>
+          </div>
+        </section>-->
+            <label for="name">Full Name</label>
+            <input id="name" type="text" name="name" placeholder="Enter your name" />
+
+            <label for="email">Email Address</label>
+            <input id="email" type="email" name="email" placeholder="Enter your email address" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+
     </section>
+
 
     <footer>
 
