@@ -14,6 +14,10 @@
     /* Background color */
     --text-color: black;
     /* Text color */
+    --icon-color: black;
+    /* Icon color */
+    --border-color: black;
+    /* Border color */
 }
 
 /* Define the dark theme */
@@ -22,6 +26,10 @@
     /* Background color */
     --text-color: white;
     /* Text color */
+    --icon-color: white;
+    /* Icon color */
+    --border-color: white;
+    /* Border-color */
 }
 
 /* Apply the theme colors to the body element */
@@ -195,7 +203,7 @@ section {
 .btn {
     border-radius: 3rem;
     padding: 0.5rem 1.5rem;
-    border: 2px solid black;
+    border: 2px solid var(--border-color);
     cursor: pointer;
     font-weight: 500;
     text-wrap: nowrap;
@@ -213,13 +221,16 @@ section {
 }
 
 .socials a i {
-    color: black;
+    color: var(--icon-color);
     font-size: 2.5rem;
+    opacity: 0.8;
     cursor: pointer;
-    transition: 0.2s ease-in-out;
+    transition: color 0.3s ease, transform 0.2s ease;
 }
 
 .socials a:hover i {
+    color: var(--accent);
+    opacity: 1;
     transform: scale(1.1);
 }
 
